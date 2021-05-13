@@ -4,12 +4,15 @@ import com.mesaj.app.models.User;
 import com.mesaj.app.pageobjects.SignUpServices;
 import com.mesaj.app.until.RandonNumberGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 
 /*En esta clase lo unico que hace es recibir un objeto(user) con valores
  y rellenarlos*/
+
 @Component
+@Scope("cucumber-glue")
 public class UserSignUp {
 
     @Autowired

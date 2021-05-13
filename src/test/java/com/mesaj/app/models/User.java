@@ -4,6 +4,7 @@ import com.mesaj.app.enums.Gender;
 import lombok.Builder;
 import lombok.Data;
 
+
 @Data
 @Builder//Permite usar un builder sin necesidad de construirlo ya que lo hace lombok
 

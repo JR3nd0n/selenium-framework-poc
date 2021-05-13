@@ -1,18 +1,16 @@
 package com.mesaj.app.stepdefinitions;
 
 import com.mesaj.app.builders.data.UserBuilder;
-import com.mesaj.app.conf.DriverConfg;
 import com.mesaj.app.tasks.NavigateTo;
 import com.mesaj.app.tasks.UserSignUp;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@ContextConfiguration(classes = {DriverConfg.class})
+
 public class SignUpStepDefs {
     @Autowired//Inyeccion de depencias por constructor
     private UserSignUp signUp;

@@ -4,10 +4,12 @@ import com.mesaj.app.enums.Browser;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DriverFactory {
     private static String pathFormat = System.getProperty("user.dir") + "\\src\\main\\resources\\driver\\windows\\%s";
-    public  static WebDriver get(Browser browser){
+    public  WebDriver get(Browser browser){
         if(Browser.chrome==browser){
             System.setProperty("webdriver.chrome.driver",String.format(pathFormat,"chromedriver.exe"));
             return  new ChromeDriver();
