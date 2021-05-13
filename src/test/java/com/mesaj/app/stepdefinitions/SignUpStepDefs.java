@@ -1,5 +1,4 @@
 package com.mesaj.app.stepdefinitions;
-
 import com.mesaj.app.builders.data.UserBuilder;
 import com.mesaj.app.tasks.NavigateTo;
 import com.mesaj.app.tasks.UserSignUp;
@@ -35,7 +34,6 @@ public class SignUpStepDefs {
                         .build()
         );
     }
-
     @Then("^He should be told that the account was created$")
     public void he_should_be_told_that_the_account_was_created() {
         assertThat(true).isEqualTo(true);
